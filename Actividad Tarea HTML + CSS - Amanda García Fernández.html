@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Festival de Cultura Digital 2026</title>
+    <link rel="stylesheet" href="Actividad Tarea HTML + CSS - Amanda García Fernández.css">
+</head>
+<body>
+
+<!--Cabecera del festival-->
+    <header>
+        <h1 class="tituloPri">CULTURA DIGITAL FEST</h1>
+        <p>Un festival para <span class="destacada">disfrutar</span> de tecnología, videojuegos, música electrónica y arte digital</p>
+
+        <nav>
+            
+            <ul>
+                <li><a href="#formulario">Inscripción</a></li>
+                <li><a href="#horario">Programa</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+
+    <br><br>
+
+<!--Inscripción de participantes-->
+<section id="formulario">
+    <h3 class="tituloSec">Formulario de inscripción</h3>
+
+    <form>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <br><br>
+
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" required>
+        <br><br>
+
+        <label for="mail">Email:</label>
+        <input type="email" id="mail" name="mail">
+        <br><br>
+
+        <label for="tel">Teléfono:</label>
+        <input type="tel" id="tel" name="tel">
+        <br><br>
+
+        <label for="fnac">Fecha de nacimiento:</label>
+        <input type="date" id="fnac" name="fnac" max="2025-12-31">
+        <br><br>
+
+        <label for="tpart">Tipo de participación:</label>
+        <select name="tpart" id="tpart">
+            <option>Asistente</option>
+            <option>Expositor</option>
+            <option>Artista</option>
+        </select>
+        <br><br>
+
+        <label>Área de interés:</label><br>
+        <input type="checkbox" name="area" value="Videojuegos">
+        <label>Videojuegos</label><br>
+        <input type="checkbox" name="area" value="Música electrónica">
+        <label>Música Electrónica</label><br>
+        <input type="checkbox" name="area" value="Programación" disabled>
+        <label>Programación</label><br>
+        <input type="checkbox" name="area" value="Arte digital">
+        <label>Arte digital</label>
+        <br><br>
+
+        <label class="especial">Nivel de experiencia:</label><br>
+        <input type="radio" name="experiencia" value="Principiante" checked>
+        <label>Principiante</label><br>
+        <input type="radio" name="experiencia" value="Intermedio">
+        <label>Intermedio</label><br>
+        <input type="radio" name="experiencia" value="Avanzado">
+        <label>Avanzado</label><br><br>
+
+        <textarea rows="5" cols="80" placeholder="Cuéntanos tu motivación personal para asistir al evento." maxlength="300"></textarea>
+        <br><br>
+
+        <button type="submit" id="enviar">Enviar</button>
+        <button type="reset" id="borrar">Borrar</button>
+
+    </form>
+</section>
+<br><br>
+
+    <!--Programa del festival-->
+<section id="horario">
+    <h3 class="tituloSec">Programa del festival</h3>
+
+    <table>
+    <caption class="tituloSec">Horarios</caption>
+
+    <thead>
+        <tr>
+            <th></th>
+            <th colspan="2">18 Junio</th>
+            <th colspan="2">19 Junio</th>
+            <th>Ambos días</th>
+        </tr>
+        <tr>
+            <th></th>
+            <th>Espacio Aire</th>
+            <th>Espacio Tierra</th>
+            <th>Espacio Aire</th>
+            <th>Espacio Tierra</th>
+            <th>Espacio Fuego</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>10:00</td>
+            <td rowspan="2">Fabrica un robot</td>
+            <td>Conceptos básicos de Procreate</td>
+            <td>¿Cómo funciona un ordenador?</td>
+            <td rowspan="3">Ilustración de mundos de fantasía</td>
+            <td rowspan="2">Aprende a pinchar música</td>
+        </tr>
+
+        <tr>
+            <td>11:00</td>
+            <td rowspan="2">Torneo de God of War</td>
+            <td>Videojuegos para principiantes</td>
+        </tr>
+
+        <tr>
+            <td>12:00</td>
+            <td>Crea personajes digitales</td>
+            <td rowspan="3">Imprime tu propia figura en 3D</td>
+            <td rowspan="4">Conciertos</td>
+        </tr>
+
+        <tr>
+            <td>13:00</td>
+            <td rowspan="2">Construcción de LEGO para tecnología</td>
+            <td rowspan="2">Arte digital abstracto</td>
+            <td>Teoría del color para pantallas</td>
+        
+        </tr>
+
+        <tr>
+            <td>14:00</td>
+            <td>Diseña tu primer videojuego</td>
+        </tr>
+
+        <tr>
+            <td>15:00</td>
+            <td colspan="4">Pausa para comer</td>
+        </tr>
+
+        <tr>
+            <td>16:00</td>
+            <td>Creación de circuitos y uso de componentes electrónicos</td>
+            <td rowspan="2">Arte realista con un rodenador</td>
+            <td rowspan="2">Mini juegos para móvil</td>
+            <td>¿Cómo buscar inspiración como artista?</td>
+            <td rowspan="2">Aprende a pinchar música</td>
+
+        </tr>
+
+        <tr>
+            <td>17:00</td>
+            <td rowspan="3">Salón de juegos (diferentes videojuegos y consolas)</td>
+            <td rowspan="3">Salón de juegos (diferentes videojuegos y consolas)</td>
+        </tr>
+
+        <tr>
+            <td>18:00</td>
+            <td>Crear con manchas</td>
+            <td>Batalla de robots</td>
+            <td rowspan="2">Conciertos</td>
+        </tr>
+
+        <tr>
+            <td>19:00</td>
+            <td>¿Dibujar con los ojos cerrados?</td>
+            <td>Batalla de robots</td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td colspan="6">Todo el día en el Espacio Agua: Expositores y Comida</td>
+        </tr>
+    </tfoot>
+</table>
+</section>
+
+    <br><br>
+
+    <!--Contacto y ubicación-->
+<section id="contacto">
+    <h3 class="tituloSec">Ubicación y contacto</h3>
+    <p>Avenida de las Tres Marías, 35
+    <br>46259 Valencia
+    
+    <br>culturadigitalfest@info.es
+
+    <br><a href="https://www.google.com/">Cultura Digital Fest Web Oficial</a></p>
+</section>
+<br>
+
+<footer>
+    <p>© 2026 Cultura Digital Fest · <a href="https://administracion.gob.es/pag_Home/avisoLegal.html">Aviso legal</a></p>
+</footer>
+
+</body>
+</html>
